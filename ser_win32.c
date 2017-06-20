@@ -62,8 +62,6 @@ static struct baud_mapping baud_lookup_table [] = {
   { 38400,  CBR_38400 },
   { 57600,  CBR_57600 },
   { 115200, CBR_115200 },
-  { 500000, CBR_500000},
-  { 1000000, CBR_1000000},
   { 0,      0 }                 /* Terminator. */
 };
 
