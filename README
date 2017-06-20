@@ -1,8 +1,8 @@
 FORK of AVRDUDE 6.3 to add support for higher baudrates 500kBaud and 1MBaud.
 
 in file 
-	ser_posix.c
-	ser_win32.c
+	ser_posix.c add baud_mapping to 
+	ser_win32.c no changes necessary variabel baudrates are supported directly.
 
 To install: ./configure
 		make
