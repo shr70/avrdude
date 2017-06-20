@@ -1,14 +1,12 @@
-FORK of AVRDUDE 6.3
+FORK of AVRDUDE 6.3 to add support for higher baudrates 500kBaud and 1MBaud.
+
+in file 
+	ser_posix.c
+	ser_win32.c
 
 To install: ./configure
 		make
 		make install
-
-
-
-
-
-
 
 
 
