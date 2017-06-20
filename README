@@ -1,8 +1,27 @@
 FORK of AVRDUDE 6.3 to add support for higher baudrates 500kBaud and 1MBaud.
 
 in file 
-	ser_posix.c add baud_mapping to 
+	ser_posix.c add baud_mapping (defined in /var/modules/<kernel>/build/include/uapi/asm-generic/termbits.h)
 	ser_win32.c no changes necessary variabel baudrates are supported directly.
+	
+Linux:
+	Alternative use regular avrdude and use these values on -b:
+			Baud: B57600 => 0010001
+			Baud:115200 => 0010002
+			B230400 0010003
+			B460800 0010004
+			B500000 0010005
+			B576000 0010006
+			B921600 0010007
+			B1000000 0010010
+			B1152000 0010011
+			B1500000 0010012
+			B2000000 0010013
+			B2500000 0010014
+			B3000000 0010015
+			B3500000 0010016
+			B4000000 0010017
+
 
 To install: ./configure
 		make
